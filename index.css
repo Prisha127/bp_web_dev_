@@ -1,0 +1,133 @@
+*{
+    font-family:'Courier New', Courier, monospace
+}
+
+.title{
+    font-size: 75px;
+    letter-spacing: 5px;
+    color: rgb(151, 127, 158)
+}
+
+.body-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.about-the-author {
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(229,178,245);
+}
+
+ul {
+    text-align: left;
+    font-size: 1.2rem;
+    color: pink;
+}
+
+.wallie-container{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+
+#dog-image{
+    border-radius: 50%;
+    width: 300px;
+    height:
+}
+
+.wallie-image{
+    border-radius: 20%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0)
+    width: 300px;
+    height: 300px;
+}
+
+#breed{
+    padding: 10px;
+    margin-top: 20px;
+    width: 800 px;
+    height: 20 px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#breed::placeholder{
+    color: pink;
+}
+
+#breed.hover{
+    background-color: pink;
+}
+
+#breed:focus{
+    outline:none;
+    border: 2px solid; rgb(229, 178, 245);
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+}
+
+button{
+    padding: 12px 20 px;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin:0 10px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale (1.05)
+}
+
+#submit{
+    background-color: rgb(117,72,180);
+}
+
+#submit:hover{
+    background-color: rgb(117,72,180);
+}
+
+#random{
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: 200px;
+}
+
+@keyframes color-change{
+    0%{
+        background-color: pink;
+    }
+    20%{
+        background-color: rgb(202, 60, 83);
+    }
+    40%{ background-color: rgb(109, 0, 128);
+    }
+    60%{
+        background-color: rgb(0, 102, 128);
+    }
+    80%{
+        background-color: rgb(0, 128, 60)
+    }
+    100%{
+        background-color: rgb(252, 252, 138)
+    }
+}
